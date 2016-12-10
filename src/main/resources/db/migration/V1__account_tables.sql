@@ -9,4 +9,4 @@ CREATE TABLE accounts (
   updated_at DATETIME
 ) DEFAULT CHARSET utf8;
 
-insert into accounts(nick,email,passwd,created_at,updated_at) VALUEs('linux_china','linux_china@hotmail.com','123456',now(),now());
+insert into accounts(nick,email,passwd,created_at,updated_at) VALUES('linux_china','linux_china@hotmail.com','123456',now(),now());
