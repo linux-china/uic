@@ -8,6 +8,8 @@ import org.springframework.test.context.jdbc.Sql;
 import java.util.List;
 import java.util.Map;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 /**
  * jdbc template test
  *
@@ -22,7 +24,7 @@ public class JdbcTest extends ProjectBaseTestCase {
     public void testQuery() throws Exception {
         List<Map<String, Object>> rows = jdbcTemplate.queryForList("SELECT id,nick FROM accounts");
         for (Map<String, Object> row : rows) {
-            System.out.println(row.get("nick"));
+            assertThat(row).containsKeys("nick");
         }
     }
 }
