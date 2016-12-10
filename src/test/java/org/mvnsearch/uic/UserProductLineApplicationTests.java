@@ -7,9 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.env.Environment;
 import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = UserProductLineApplication.class, webEnvironment = SpringBootTest.WebEnvironment.MOCK)
-public class UserProductLineApplicationTests {
+public class UserProductLineApplicationTests extends ProjectBaseTestCase {
 
     @Autowired
     private Environment env;
