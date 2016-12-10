@@ -7,3 +7,6 @@
 * java 8
 * maven
 * mysql 5.7
+
+
+# https://github.com/linux-china/uic
