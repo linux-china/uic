@@ -3,6 +3,7 @@ package org.mvnsearch.uic.domain.infrastructure.domain.model;
 
 import org.mvnsearch.uic.domain.model.Account;
 import org.mvnsearch.uic.domain.model.AccountRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
@@ -11,6 +12,7 @@ import java.util.Optional;
  *
  * @author linux_china
  */
+@Repository
 public class AccountRepositoryImpl implements AccountRepository {
     public void create(Account account) {
 

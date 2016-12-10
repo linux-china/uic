@@ -2,6 +2,7 @@ package org.mvnsearch.uic.domain.infrastructure.domain.specification;
 
 
 import org.mvnsearch.uic.domain.specification.AccountSpec;
+import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
@@ -10,6 +11,7 @@ import java.util.Optional;
  *
  * @author linux_china
  */
+@Component
 public class AccountSpecImpl implements AccountSpec {
 
     public Optional<Long> isEmailUnique(String email) {

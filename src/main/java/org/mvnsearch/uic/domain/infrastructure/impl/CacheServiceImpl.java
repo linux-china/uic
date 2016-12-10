@@ -2,6 +2,7 @@ package org.mvnsearch.uic.domain.infrastructure.impl;
 
 
 import org.mvnsearch.uic.domain.infrastructure.CacheService;
+import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
 import java.util.Map;
@@ -13,6 +14,7 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  * @author linux_china
  */
+@Service
 public class CacheServiceImpl implements CacheService {
     private Map<String, Serializable> store = new ConcurrentHashMap<>();
 
