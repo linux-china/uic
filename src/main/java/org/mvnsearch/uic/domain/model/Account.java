@@ -13,7 +13,7 @@ import java.util.Date;
 @DomainEntity
 public class Account implements BaseDomainEntity<Long>{
     private Long id;
-    private String name;
+    private String nick;
     private String email;
     private String password;
     private Integer status;
@@ -27,12 +27,12 @@ public class Account implements BaseDomainEntity<Long>{
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNick() {
+        return nick;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNick(String nick) {
+        this.nick = nick;
     }
 
     public String getEmail() {
