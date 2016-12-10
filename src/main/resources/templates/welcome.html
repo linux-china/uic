@@ -1,0 +1,16 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"
+      xmlns:th="http://www.thymeleaf.org"
+      data-layout-decorate="layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Welcome</title>
+</head>
+<body>
+<!--/*@thymesVar id="nick" type="java.lang.String"*/-->
+<div data-layout-fragment="content">
+    Welcome <span th:text="${nick}">Tom</span>
+</div>
+
+</body>
+</html>
