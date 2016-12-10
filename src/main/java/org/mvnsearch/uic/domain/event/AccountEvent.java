@@ -15,7 +15,6 @@ public class AccountEvent extends BaseDomainEvent<Account> {
     public static String BLOCKED_TYPE = "blocked";
 
     public AccountEvent(String type, Account account) {
-        setType(type);
         setPayload(account);
     }
 }
