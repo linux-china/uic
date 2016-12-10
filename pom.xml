@@ -61,6 +61,11 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.mvnsearch.ddd</groupId>
+            <artifactId>ddd-base</artifactId>
+            <version>1.0.6-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
         </dependency>
