@@ -2,6 +2,7 @@ package org.mvnsearch.uic.login;
 
 import org.mvnsearch.uic.domain.application.AccountManager;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,8 @@ public class PortalController {
     @Autowired
     private AccountManager accountManager;
     //不能引用Domain内部的组件，如repository, service, infrastructure等
+    @Autowired
+    private ApplicationEventPublisher eventPublisher;
 
     @GetMapping("/")
     @ResponseBody
